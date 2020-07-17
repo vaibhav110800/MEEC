@@ -118,6 +118,7 @@ nav a:hover {
     border-bottom: 3px solid #0f4c75;
     font-size: 40%;
   }
+  
     .nav-link{
         font-weight: bold;
         font-size: 10px;
@@ -130,7 +131,7 @@ nav a:hover {
         background:rgba(0,0,0,0.5);
     }
     .carousel-caption{
-        padding-bottom: 200px !important ;
+        padding-bottom: 300px !important ;
         margin-bottom: 0px;
     }
     .carousel-caption h5{

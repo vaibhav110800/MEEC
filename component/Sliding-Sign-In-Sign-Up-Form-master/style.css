@@ -11,14 +11,15 @@ input {
   font-family: "Poppins", sans-serif;
 }
 
-div.w3-container{
+/* div.w3-container{
   padding-left: 0px;
   padding-right: 0px;
 }
 .pa{
   margin-bottom: 0px;
-}
+} */
 .container {
+ 
   position: relative;
   width: 100%;
   background-color: #fff;
