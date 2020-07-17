@@ -9,13 +9,16 @@ body{
 div.w3-container{
     padding-left: 0px;
     padding-right: 0px;
+
 }
 .pa{
     margin-bottom: 0px;
 }
 .c{
-    position: relative; 
-    display: block;
+  position: relative;
+}
+.q{
+  height: 100vh;
 }
 
 .menu-holder {
@@ -40,6 +43,7 @@ nav a:hover {
   }
 .slider-holder {
     position: absolute;
+    width: 100%;
     top:0;   
     z-index:-1; 
 }
@@ -80,7 +84,7 @@ nav a:hover {
 }
 .btn{
     padding-bottom: 350px;
-    
+   
 }
 .carousel-caption span{
     color:#1b262c;
@@ -125,15 +129,12 @@ nav a:hover {
     .navbar-collapse{
         background:rgba(0,0,0,0.5);
     }
-    .d-block{
-      height: auto;
-      
-  }
     .carousel-caption{
-        padding-bottom: 10px ;
+        padding-bottom: 200px !important ;
+        margin-bottom: 0px;
     }
     .carousel-caption h5{
-        font-size: 20px ;
+        font-size: 40px ;
        
     }
     .btn{
@@ -158,7 +159,5 @@ nav a:hover {
     }
   }
 
-.x{
-  position: relative;
-  display: block;
-}
+  
+   
