@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@800&family=Roboto&display=swap');
-div.w3-container{
-    padding-left: 0px;
-    padding-right: 0px;
 
-}
-.pa{
-    margin-bottom: 0px;
-}
 body{
   overflow-x: hidden;
   color: black;
@@ -40,17 +33,9 @@ body{
 
 .carousel-item{
   height: 100vh;
-  background: rgba(0, 0, 0, 0.7);
-  position: relative !important;
+  
 }
-.v{
-    opacity: .7;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    background: rgba(255,255,255, 0.6);
-}
+
 
 .carousel-caption{
   position: absolute;
@@ -59,17 +44,16 @@ body{
   width: 100%;
   left: 0;
   right: 0;
-  
 }
 
 .carousel-caption h5{
-
+    
   font-family: 'Poppins', sans-serif !important;
   font-size: 70px;
   font-weight: bold;
   text-transform: uppercase;
   color:#0f4c75;
-  /* text-shadow: .1rem .1rem .8rem black; */
+  text-shadow: .1rem .1rem .8rem black;
   
 }
 
@@ -79,8 +63,7 @@ body{
 
 .carousel-caption a{
   background: transparent;
-  border-color:  #1b262c;
-  color: #1b262c;
+  border-color:  #0f4c75;
   border: 3px solid;
   border-radius: 25px;
   font-size: 25px;
@@ -102,3 +85,68 @@ body{
     font-size: 15px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============= COURSE SECTION =============*/
+
+/* .narrow {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.btn-md {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.1rem;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+.btn-secondary {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  border-color: #1EBBA3;
+  background-color: #1EBBA3;
+  color: white;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  border-color: #189582;
+  background-color: #189582;
+  color: white;
+} */
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
