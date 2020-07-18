@@ -1,0 +1,201 @@
+
+   body{
+    padding: 0px;
+    margin: 0px;  
+    font-family: sans-serif;
+  
+   }   
+
+   div.w3-container{
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+.pa{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+ .container{
+      width: 90%;
+      margin: auto;
+      overflow: hidden;
+      
+    }
+    /* contact form css */
+
+
+    #contact-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+      background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(img/1.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      width: 100% ;
+      padding-bottom: 2%;
+    }
+
+    #contact-section .container h2{
+      text-align: center;
+       text-decoration: underline;
+        /* text-decoration-color:red; */
+        text-underline-position: under;
+        color: white;
+        letter-spacing: 2px;
+        font-size: 70px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    
+
+    #contact-section .container p{
+      text-align: center; 
+      width: 70%; 
+      margin-left: auto;
+       margin-right: auto; 
+       padding-bottom: 3%;
+       color: #0f4c75;
+       letter-spacing:3px;
+       font-family: 'Roboto', sans-serif;
+       font-size: 30px;
+    }
+
+    .contact-form i.fa{
+      /* color: red; */
+      /* color: #fff; */
+      font-size: 22px; 
+      padding: 2%;
+      background-color: none;
+      border-radius: 100%;
+      margin: 2%;
+      border: 2px solid #fff;
+      cursor: pointer;
+      border:2px solid #0f4c75;
+      color: #0f4c75;
+    }
+    
+    .contact-form i.fa:hover{
+      cursor: pointer;
+      border:2px solid white;
+      color: white;
+    }
+     .info{
+         text-align: left;
+     }
+      .contact-form{
+        display: grid;
+        grid-template-columns: auto auto;
+         }
+      
+      .form-info{
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        letter-spacing: 2px;
+      }
+      input{
+        padding: 10px;
+        margin:10px !important;
+        width: 70%;
+        border-radius: 25px;
+        background-color:rgba(136, 133, 133, 0.5);
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        border: none;
+        outline:none;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      input::placeholder{
+        color: white;
+      }
+    
+       textarea{
+      padding: 10px;
+      margin: 10px !important;     
+      width: 70%;
+      background-color:rgba(136, 133, 133, 0.5);
+      color: black;
+      font-size: 15px;
+        font-weight: bold;
+        border: none;
+        outline:none;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 25px;
+     }
+     textarea::placeholder{
+       color: white;
+     }
+     
+      
+    
+      .submit{
+        border-radius: 25px;
+      width: 40%;
+      background: #0f4c75;
+      padding: 5px;
+      outline: none;
+       /* border: 1px solid #fff;
+      color: #fff; */
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      height: 38px;
+      text-align: center;
+      cursor: pointer;
+      letter-spacing: 2px;
+      margin-left: 3%;
+      border:2px solid #0f4c75;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+     }
+
+     .submit:hover{
+           border: 1px solid #0f4c75;
+           background: white;
+      color: #0f4c75;
+      cursor: pointer;
+     }
+
+        /* media queries */
+    @media (max-width: 768px){
+
+        #contact-section .contact-form{
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+        #contact-section .submit{
+        width: 60%;
+      }
+
+        #contact-section .container h2{
+            font-size: 35px;
+        }
+
+        #contact-section .container p{
+            font-size: 18px;
+        }
+
+  }
+  @media (max-height: 850px){
+
+    #contact-section{
+        height: 100vh ;
+    }
+   
+     }
+
+  @media (max-width: 850px){
+
+    #contact-section{
+        height: 100% ;
+    }
+   
+     }
