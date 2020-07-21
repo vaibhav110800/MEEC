@@ -46,6 +46,11 @@ a.nav-link{
     font-size: 110%;
 }
 
+.custom-toggler.navbar-toggler { 
+  border-color: #1b262c; 
+} 
+
+
 .carousel-item{
   height: 100vh;
   background: rgba(0, 0, 0, 0.7);
@@ -86,12 +91,13 @@ a.nav-link{
 }
 
 .carousel-caption a{
+  font-family: 'Montserrat', sans-serif ;
   background: transparent;
   border-color:  #1b262c;
   color: #1b262c;
   border: 3px solid;
   border-radius: 25px;
-  font-size: 25px;
+  font-size: 22px;
 
 }
 .carousel-caption a:hover{
@@ -102,6 +108,11 @@ a.nav-link{
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+/* :root {
+  --animate-duration: 5s; 
+  --animate-delay: 3s;
+} */
+
 @media (max-width:767px){
   .carousel-caption h5{
     font-size: 40px;
@@ -111,17 +122,17 @@ a.nav-link{
   }
 }
 
-@media (min-width: 768px) and (max-width: 1025px) {
+/* @media (min-width: 768px) and (max-width: 1025px) {
   .collapse {
       display: none !important;
   }
-}
+} */
 
 /* --------------------------  section 2  ----------------------------- */
 .he{
   padding-top: 50px;
-  font-family: 'Poppins', sans-serif ;
-  font-size: 70px;
+  font-family: 'Montserrat', sans-serif ;
+  font-size: 54px;
   color:#0f4c75 ;
   text-align: center;
 }
@@ -214,8 +225,55 @@ a.nav-link{
   }
 }
 
+.sl{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1100px;
+  height:auto;
+}
 
+.slider .items img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1100px;
+  height: auto;
+  /* margin: 0 auto; */
+  /* transition: all linear 0.4s; */
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #0f4c75 !important;
+}
 
+@media (max-width:767px){
+  .slider{
+    width: 300px !important;
+    height:auto;
+  }
+  .slider .items img{
+    width: 300px !important;
+    height:auto;
+  }
+}
+
+@media (max-width:1024px) and (min-width:768px){
+  .slider{
+    width: 600px !important;
+    height:auto;
+  }
+  .slider .items img{
+    width: 600px !important;
+    height:auto;
+  }
+}
+  
 
 
 
