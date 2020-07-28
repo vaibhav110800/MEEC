@@ -387,6 +387,32 @@ a.nav-link{
   color: #1b262c;
   margin-left: 5px;
 }
+.pb span{
+  color: green;
+  font-weight: 700;
+  /* margin-top: 5px; */
+}
+.read1{
+  text-align: center;
+}
+.read{
+  border-radius: 15px;
+  background-color: #0f4c75 ;
+  border: 3px solid #0f4c75;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+.read:hover{
+  color:#0f4c75; 
+  /* border: 3px solid #0f4c75; */
+  background-color:transparent  ;
+  text-decoration:none; 
+  cursor:pointer;  
+}
 .it{
   color: green;
   font-weight: 900;
