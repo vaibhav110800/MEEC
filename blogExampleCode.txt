@@ -1,0 +1,156 @@
+<template>
+  <div class="section-wrap">
+    <wave-blog-upper />
+    <section class="blog-section">
+      <div class="section-content">
+        <div class="blog-top-line">
+          <div class="blog-title">Articles and helpful tips from our blog</div>
+          <div class="top-button">Visit the blog</div>
+        </div>
+        <div class="blog-cart">
+          <div class="cart-container">
+            <div class="time-content">
+              20th May •
+              <span class="material-icons">access_time</span>
+              clock 6 minute read
+            </div>
+            <div class="content-text">
+              <b>With more time to sleep, why are we still so exhausted?</b>
+            </div>
+            <div class="blog-pic-wrap">
+              <img src="../../assets/blog_pic1.png" class="blog-pic" />
+            </div>
+          </div>
+
+          <div class="cart-container">
+            <div class="time-content">
+              20th May •
+              <span class="material-icons">access_time</span>
+              clock 6 minute read
+            </div>
+            <div class="content-text">
+              <b>With more time to sleep, why are we still so exhausted?</b>
+            </div>
+            <div class="blog-pic-wrap">
+              <img src="../../assets/blog_pic2.png" class="blog-pic" />
+            </div>
+          </div>
+
+          <div class="cart-container">
+            <div class="time-content">
+              20th May •
+              <span class="material-icons">access_time</span>
+              clock 6 minute read
+            </div>
+            <div class="content-text">
+              <b>With more time to sleep, why are we still so exhausted?</b>
+            </div>
+            <div class="blog-pic-wrap">
+              <img src="../../assets/blog_pic3.png" class="blog-pic" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <wave-blog-lower />
+  </div>
+</template>
+
+<script>
+import WaveBlogUpper from "../../components/WaveBlogUpper.vue";
+import WaveBlogLower from "../../components/WaveBlogLower.vue";
+export default {
+  components: {
+    WaveBlogUpper,
+    WaveBlogLower
+  }
+};
+</script>
+
+<style scoped>
+.blog-section {
+  background-color: #f2faf5;
+}
+
+.blog-top-line {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  justify-content: space-between;
+}
+
+.blog-top-line .blog-title {
+  color: #143a56;
+  font-size: 30px;
+  text-align: center;
+  /* margin: auto; */
+}
+
+.blog-top-line .top-button {
+  padding: 16px 28px;
+  border-radius: 16px;
+  cursor: pointer;
+  color: #ffffff;
+  text-align: center;
+  /* margin: auto; */
+  font-size: 16px;
+  background-color: #143a56;
+  box-shadow: 0px 6px 15px -1px #143a56;
+  transition: all 0.3s ease-in-out;
+}
+
+.top-button:hover {
+  background-color: #144365;
+}
+
+.blog-cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px -15px;
+}
+
+.cart-container {
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 0;
+  background: #ffffff;
+  margin: 0px 15px 40px;
+  min-width: 250px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.cart-container .time-content {
+  padding-left: 20px;
+  padding-top: 20px;
+  color: #a6aeb7;
+  font-size: 12px;
+}
+
+.cart-container .time-content span {
+  font-size: 12px;
+}
+
+.cart-container .content-text {
+  margin: 20px;
+  color: #143a56;
+  font-size: 24px;
+  max-width: 372px;
+}
+
+.blog-pic-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+.blog-pic {
+  height: 229px;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.6s ease-in-out;
+}
+.cart-container:hover .blog-pic {
+  transform: scale(1.05);
+}
+</style>
