@@ -1112,18 +1112,23 @@ body {
   color: #1b262c !important;
   font-size: 20px;
   margin-right: 5px;
-  cursor: pointer !important;
+  cursor: pointer;
 }
 .team .card .box a:hover{
   color: #0f4c75 !important;
+  cursor: pointer;
 }
 .team .card .box a i{
-  cursor: pointer !important;
+  cursor: pointer;
+}
+.team .card .box a i:hover{
+  cursor: pointer;
 }
 .q{
   text-align: center !important;
   font-size: 20px;
   color: #1b262c !important;
+  cursor: pointer;
 }
 @media(max-width: 664px){
 	.team .card{
@@ -1197,6 +1202,13 @@ body {
   font-weight: 600;
   margin: 5px 0;
 }
+.iq{
+  margin-right: 7px;
+}
+.ie{
+  margin: 0px 7px;
+}
+
 .blog-post-title{
   font-size: 20px;
   font-family: 'Poppins', sans-serif ;
@@ -1234,6 +1246,7 @@ body {
   border-radius: 12px;
 }
 .blog-post-cta span{
+  cursor: pointer;
 	z-index: 2;	
 	display: block;
 	position: absolute;
@@ -1242,6 +1255,7 @@ body {
   border-radius: 12px;
 }
 .blog-post-cta::before{
+  cursor: pointer;
 	content: '';
 	position: absolute;
 	top: 0;
@@ -1259,11 +1273,13 @@ body {
 
 }
 .blog-post-cta:hover::before{
+  cursor: pointer;
 	opacity: 1;
   width: 100%;
   border-radius: 12px;
 }
 .blog-post-cta:hover{
+  cursor: pointer;
   color: white;
 }
 .ba1{
