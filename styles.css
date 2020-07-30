@@ -1068,7 +1068,7 @@ body {
   margin-right: 20px;
   margin-top: 20px;
   padding: 0px 15px;
-  cursor: context-menu;
+  cursor: default;
   transition: margin .6s ease,box-shadow 1s ease;
 }
 .team .card:hover{
@@ -1112,9 +1112,13 @@ body {
   color: #1b262c !important;
   font-size: 20px;
   margin-right: 5px;
+  cursor: pointer !important;
 }
 .team .card .box a:hover{
   color: #0f4c75 !important;
+}
+.team .card .box a i{
+  cursor: pointer !important;
 }
 .q{
   text-align: center !important;
@@ -1160,7 +1164,7 @@ body {
 }
 
 .blog-post{
-  width: 100%;
+  width: 80%;
   max-width: 1400px;
   padding:40px;
   background-color: #0f4c75;
@@ -1197,15 +1201,16 @@ body {
   font-size: 20px;
   font-family: 'Poppins', sans-serif ;
   text-transform: uppercase;
-  color: #1b262c;
+  color: white;
 }
 .blog-post-text{
   margin-bottom: 30px;
   font-family: 'Roboto', sans-serif;
   font-size:16px;
-  color: white;
+  color: #f4f9f4;
 }
 .blog-post-cta{
+  cursor: pointer;
   color: white;
   display: inline-block;
   padding: 15px 20px;
@@ -1266,6 +1271,7 @@ body {
   padding: 30px 0px;
 }
 .ba {
+  cursor: pointer;
   border-radius: 12px;
   text-decoration: none !important;
   color: white;
@@ -1310,6 +1316,7 @@ body {
 }
 @media screen and (max-width:768px){
   .blog-post{
+    width: 100%;
     padding: 20px;
     flex-direction: column;
   }
