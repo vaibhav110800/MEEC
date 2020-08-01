@@ -33,7 +33,7 @@ div.w3-container{
       background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(img/1.jpg);
       background-size: cover;
       background-position: center;
-      height: 100vh;
+      height: 100%;
       width: 100% ;
       padding-bottom: 2%;
     }
