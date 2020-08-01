@@ -1,12 +1,11 @@
-
-   body{
+body{
     padding: 0px;
     margin: 0px;  
     font-family: sans-serif;
   
    }   
 
-   div.w3-container{
+div.w3-container{
     padding-left: 0px;
     padding-right: 0px;
 
@@ -65,14 +64,15 @@
     }
 
     .contact-form i.fa{
-      /* color: red; */
-      /* color: #fff; */
       font-size: 22px; 
-      padding: 2%;
+      height: 45px !important;
+      width: 45px !important;
+      line-height: 45px;
+      text-align: center;
       background-color: none;
-      border-radius: 100%;
-      margin: 2%;
-      border: 2px solid #fff;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      display: inline-block;
       cursor: pointer;
       border:2px solid #0f4c75;
       color: #0f4c75;
