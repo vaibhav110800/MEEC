@@ -165,6 +165,9 @@ div.w3-container{
 
         /* media queries */
     @media (max-width: 768px){
+      #contact-section{
+        height: 100% ;
+    }
 
         #contact-section .contact-form{
         display: block;
@@ -184,13 +187,7 @@ div.w3-container{
         }
 
   }
-  @media (max-height: 850px){
-
-    #contact-section{
-        height: 100vh ;
-    }
-   
-     }
+  
 
   @media (max-width: 850px){
 

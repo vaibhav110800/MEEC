@@ -1446,6 +1446,12 @@ body {
   display: inline-block;
   cursor: pointer;
 }
+.social-media a path{
+  cursor: pointer;
+}
+.social-media a svg{
+  cursor: pointer;
+}
 i.fab{
   cursor: pointer;
 }
