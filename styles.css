@@ -1139,7 +1139,7 @@ body {
 /* --------------------------  blog section   ----------------------------- */
 
 .bh{
-  background-color: #f0f8ff;
+  background-color: white;
   margin: 0px;
 }
 .bt{
@@ -1163,7 +1163,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f0f8ff;
+  background-color: white;
   padding: 0 24px;
   flex-wrap: wrap;
 }
@@ -1376,6 +1376,7 @@ body {
 .fi{
   height: 32px;
   width: auto;
+  margin-bottom: 20px;
 }
 .footer-items{
   width: 25%;
@@ -1434,12 +1435,13 @@ body {
   cursor: pointer;
 }
 .footer-items .social-media a {
-  font-size: 18px;
-  height: 40px !important;
-  width: 40px !important;
-  line-height: 40px;
+  font-size: 16px;
+  height: 35px !important;
+  width: 35px !important;
+  line-height: 35px;
   text-align: center;
   margin-right: 10px;
+  margin-bottom: 10px;
   border-radius: 50%;
   border: 1px solid white;
   transition: .3s;
@@ -1468,12 +1470,12 @@ i.fab:hover{
   width: 130px;
   text-align: center;
   border-radius: 16px;
+  transition: .3s;
 }
 .down:hover{
-  color: white;
-  background: #1b262c;
-  border: #1b262c;
-  border-radius: 25px;
+  color: #0f4c75;
+  background: white;
+  border: #0f4c75;
   cursor: pointer;
 }
 .waves {
@@ -1492,9 +1494,30 @@ i.fab:hover{
   align-items: center;
   text-align: center;
   background-color: white;
-  min-height: 30vh;
+  min-height: 20vh;
 }
-
+.job h2{
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 25px;
+}
+.job a{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: white;
+  background: #0f4c75;
+  transition: .3s;
+  border: 2px solid #0f4c75;
+  padding: 8px 14px;
+  text-align: center;
+  border-radius: 16px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.job a:hover{
+  border:2px solid #0f4c75 ;
+  background: transparent;
+  color: #0f4c75;
+}
 /* Animation */
 .parallax>use {
   animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
