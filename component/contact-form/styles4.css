@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@800&family=Roboto:wght@500&display=swap');
+*{
+  box-sizing: border-box ;
+}
+button:focus {outline:0;}
+
 body{
     padding: 0px;
     margin: 0px;  
@@ -14,7 +20,7 @@ div.w3-container{
     margin-bottom: 0px;
     margin-top: 0px;
 }
- .container{
+.container{
       width: 90%;
       margin: auto;
       overflow: hidden;
@@ -27,13 +33,10 @@ div.w3-container{
         display: flex;
         justify-content: center;
         align-items: center;
-
-
-
-      background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(img/1.jpg);
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(img/1.jpg);
       background-size: cover;
       background-position: center;
-      height: 100vh;
+      height: 100%;
       width: 100% ;
       padding-bottom: 2%;
     }
@@ -165,10 +168,7 @@ div.w3-container{
 
         /* media queries */
     @media (max-width: 768px){
-      #contact-section{
-        height: 100% ;
-    }
-
+      
         #contact-section .contact-form{
         display: block;
         width: 100%;
@@ -188,11 +188,11 @@ div.w3-container{
 
   }
   
-
-  @media (max-width: 850px){
+@media (min-width: 768px) and (max-width: 1025px){
 
     #contact-section{
-        height: 100% ;
+        height: 100vh ;
     }
    
      }
+
