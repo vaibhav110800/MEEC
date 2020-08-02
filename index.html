@@ -628,7 +628,7 @@
   <!-- end blog section  -->
 
   <!-- start contactUs section  -->
-  <div id="contact">
+  <div class="contact" id="contact">
 
     <div class="header">
 
@@ -721,7 +721,31 @@
     <div class="content1">
       <div class="job">
         <h2>WANT TO GET HIRED</h2>
-        <a href="">APPLY NOW</a>
+        <a class="butto" href="#popup1">APPLY NOW</a>
+      </div>
+    </div>
+
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>Drop Us A Message</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content2">
+          <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="text" placeholder="Last Name"><br>
+            <input type="Email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone" required><br>
+            <label for="cars">Choose a car:</label>
+            <select id="apply" name="apply">
+              <option value="a1">Sales Intern</option>
+              <option value="a2">English Content Developer Intern</option>
+              <option value="a3">Economics Content Developer Intern</option>
+            </select><br>
+            <label for="myfile">Upload CV:</label>
+            <input type="file" id="myfile" name="myfile" multiple><br><br>
+            <input type="submit">
+          </form>
+        </div>
       </div>
     </div>
 
@@ -729,6 +753,12 @@
   <!-- end contactUs section  -->
 
   <!--- Script Source Files -->
+  <!-- <script type="text/javascript">
+    function toggle() {
+      var blur = document.getElementById('blur');
+      blur.classList.toggle('active')
+    }
+  </script> -->
   <script src="index.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>

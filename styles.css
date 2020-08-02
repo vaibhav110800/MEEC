@@ -1518,6 +1518,66 @@ i.fab:hover{
   background: transparent;
   color: #0f4c75;
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.popup h2 {
+  margin: 20px 0px;
+  text-align: center;
+  font-size: 25px;
+  color: #1b262c;
+  font-family: 'Montserrat', sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .content2 {
+  overflow: auto;
+  font-family: 'Roboto', sans-serif;
+  color: #1b262c;
+}
+.popup .content2 input{
+  margin: 10px 10px 10px 0px;
+}
+.popup .content2 select{
+  margin: 10px 10px 10px 0px;
+}
+
+@media screen and (max-width: 1080px){
+  .popup{
+    width: 70%;
+  }
+}
+  
 /* Animation */
 .parallax>use {
   animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;

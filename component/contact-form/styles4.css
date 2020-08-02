@@ -3,14 +3,14 @@
   box-sizing: border-box ;
 }
 button:focus {outline:0;}
-html {
+/* html {
   background: url(img/1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   /* opacity: .6; */
-}
+} */
 body{
     padding: 0px;
     margin: 0px;  
