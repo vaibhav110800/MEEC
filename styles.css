@@ -12,6 +12,10 @@ div.w3-container{
 html {
   overflow-x: initial !important;
 }
+/* ::-webkit-scrollbar{
+  width: 0;
+} */
+
 .pa{
     margin-bottom: 0px;
 }
@@ -85,8 +89,8 @@ a.nav-link{
   color: #1b262c;
   border: 3px solid;
   border-radius: 25px;
-  font-size: 22px;
-  transition: all 0.4s ease-in-out;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
 }
 .carousel-caption a:hover{
   background:#0f4c75 ;
@@ -313,7 +317,7 @@ a.nav-link{
 }
 
 .flip-box-back {
-  background-color: #f0f8ff;
+  background-color: white;
   color: #1b262c;
   transform: rotateY(180deg);
 }
@@ -370,8 +374,8 @@ a.nav-link{
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
   color: #1b262c;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 5px;
   text-align: center;
 }
 .pb1{
@@ -519,7 +523,7 @@ button:hover{
 }
 .testim {
   padding-top: 30px;
-  background-color: aliceblue;
+  background-color: white;
   width: 100%;
   top: 50%;
 }
@@ -1121,6 +1125,12 @@ body {
 .team .card .box a i{
   cursor: pointer;
 }
+.team .card .box a svg{
+  cursor: pointer;
+}
+.team .card .box a path{
+  cursor: pointer;
+}
 .team .card .box a i:hover{
   cursor: pointer;
 }
@@ -1519,6 +1529,7 @@ i.fab:hover{
   color: #0f4c75;
 }
 
+/* popup job section */
 .overlay {
   position: fixed;
   top: 0;
@@ -1537,8 +1548,8 @@ i.fab:hover{
 .popup {
   margin: 70px auto;
   padding: 20px;
-  background: #fff;
-  border-radius: 5px;
+  background: white;
+  border-radius: 16px;
   width: 40%;
   position: relative;
   transition: all 5s ease-in-out;
@@ -1565,16 +1576,82 @@ i.fab:hover{
   font-family: 'Roboto', sans-serif;
   color: #1b262c;
 }
+.content2 form{
+  text-align: center;
+  align-items: center;
+  font-size: 14px;
+}
 .popup .content2 input{
   margin: 10px 10px 10px 0px;
+  border: none;
+  outline: none;
+  background: whitesmoke;
+  border-radius: 12px;
+  cursor: auto;
+  padding: 5px 10px;
+}
+.popup ::placeholder{
+  padding-left: 5px;
+  font-size: 12px;
 }
 .popup .content2 select{
   margin: 10px 10px 10px 0px;
 }
-
+.popup .content2 select#apply{
+  padding: 5px 6px;
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+  border-radius: 12px;
+}
+.popup .content2 input#myfile{
+  border: none;
+  border-radius: 12px;
+}
+.popup .content2 input#file-upload-button{
+  border-radius: 12px;
+}
+.js{
+  font-size: 14px !important;
+  color: white;
+  background-color: #0f4c75 !important;
+  font-family: 'Poppins', sans-serif;
+  transition: .3s;
+  cursor: pointer !important;
+}
+.js:hover{
+  color: #0f4c75;
+  background-color: white !important;
+  border: 2px solid #0f4c75 !important;
+}
+.cr{
+  margin: 10px 0px 20px 0px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: #1b262c;
+  text-align: center;
+}
 @media screen and (max-width: 1080px){
   .popup{
     width: 70%;
+  }
+}
+@media screen and (max-width: 767px){
+  .content2 form{
+    font-size: 12px;
+  }
+  .popup .content2 select#apply{
+    width: 200px;
+    margin-top: 5px;
+  }
+  .popup .content2 label{
+    margin-bottom: 0px;
+  }
+  .popup .content2 input#myfile{
+    width:200px ;
+  }
+  input.js{
+    margin-top: 0px !important;
   }
 }
   
@@ -1606,7 +1683,7 @@ i.fab:hover{
       transform: translate3d(85px, 0, 0);
   }
 }
-/*Shrinking for tablet and mobile*/
+
 @media (max-width: 1085px) {
   .footer-items {
       width: 50%;
