@@ -12,9 +12,24 @@ div.w3-container{
 html {
   overflow-x: initial !important;
 }
-/* ::-webkit-scrollbar{
-  width: 0;
-} */
+::-webkit-scrollbar
+{
+  border-radius: 20px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+	box-shadow: linear-gradient(125deg,#3498db,#34495e);
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(125deg,#3498db,#34495e);
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+	background: linear-gradient(125deg,#0f4c75,#1b262c);
+}
 
 .pa{
     margin-bottom: 0px;
