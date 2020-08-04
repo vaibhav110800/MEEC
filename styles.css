@@ -46,6 +46,7 @@ body{
   background: rgba(6, 33, 46, .6) !important;
 }
 a.nav-link{
+  cursor: pointer;
   font-family: 'Roboto', sans-serif;
 }
 .navbar-brand img{
@@ -106,6 +107,7 @@ a.nav-link{
   border-radius: 25px;
   font-size: 16px;
   transition: all 0.3s ease-in-out;
+  margin-right: 15px;
 }
 .carousel-caption a:hover{
   background:#0f4c75 ;
@@ -143,6 +145,7 @@ a.nav-link{
   font-family: 'Montserrat', sans-serif ;
 }
 .container{
+  cursor: pointer;
   position: relative;
   width: 1200px;
   display: flex;
@@ -157,6 +160,7 @@ a.nav-link{
   text-align: left;
 }
 .container .card{
+  cursor: pointer;
   position: relative;
   max-width: 250px;
   height: 215px;
@@ -173,6 +177,7 @@ a.nav-link{
   height: 700px;
 }
 .container .card .imgBx{
+  cursor: pointer;
   position: relative;
   width: 260px;
   height: 260px;
@@ -184,6 +189,7 @@ a.nav-link{
 .container .card .imgBx img{
   max-width: 100%;
   border-radius: 4px;
+  cursor: pointer;
 }
 .container .card .content
 {
@@ -195,6 +201,7 @@ a.nav-link{
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 .container .card:hover .content{
   visibility: visible;
@@ -285,8 +292,7 @@ a.nav-link{
   margin-bottom: 0px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center;  
 }
 .conm{
   display: flex;
@@ -303,15 +309,18 @@ a.nav-link{
   margin: 20px;
   box-sizing: border-box;
   overflow: hidden;
+  /* cursor: pointer; */
   /* perspective: 1000px; */
 }
 
 .flip-box-inner {
+  cursor: pointer;
   position: relative;
   width: 100%;
   height: 100%;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  /* cursor: pointer; */
 }
 
 .flip-box:hover .flip-box-inner {
@@ -324,11 +333,13 @@ a.nav-link{
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  /* cursor: pointer; */
 }
 
 .flip-box-front {
   background-color: white;
   color: #1b262c;
+  /* cursor: pointer; */
 }
 
 .flip-box-back {
@@ -442,7 +453,7 @@ a.nav-link{
 .button {
   border-radius: 25px;
   background-color: #1b262c;
-  border: none;
+  border: 3px solid #1b262c;
   color: #FFFFFF;
   text-align: center;
   font-size: 20px;
@@ -1191,6 +1202,7 @@ body {
   background-color: white;
   padding: 0 24px;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .blog-post{
@@ -1225,7 +1237,7 @@ body {
   color: darkgray;
   font-size: 10px;
   font-weight: 600;
-  margin: 5px 0;
+  margin: 20px 0;
 }
 .iq{
   margin-right: 7px;
@@ -1313,7 +1325,7 @@ body {
 }
 .ba {
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 16px;
   text-decoration: none !important;
   color: white;
   display: inline-block;
@@ -1327,7 +1339,7 @@ body {
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
 	position: relative;
-  border: 1px solid rgba(255,255,255,0.5);
+  border: 3px solid #1b262c;
   background: #1b262c;
 }
 .ba a{
@@ -1336,11 +1348,12 @@ body {
 	display: block;
 }
 .ba:hover {
-  background-color: #0f4c75;
-  color: white;
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
-	border-radius: 25px;	
+  background-color: white;
+  color: #1b262c;
+  border: 3px solid #1b262c;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	border-radius: 16px;	
 }
 @media screen and (max-width:1068px){
   .blog-post{
@@ -1460,10 +1473,10 @@ body {
   cursor: pointer;
 }
 .footer-items .social-media a {
-  font-size: 16px;
-  height: 35px !important;
-  width: 35px !important;
-  line-height: 35px;
+  font-size: 14px;
+  height: 30px !important;
+  width: 30px !important;
+  line-height: 30px;
   text-align: center;
   margin-right: 10px;
   margin-bottom: 10px;
