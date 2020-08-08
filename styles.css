@@ -30,10 +30,16 @@ html {
 ::-webkit-scrollbar-thumb:hover{
 	background: linear-gradient(125deg,#0f4c75,#1b262c);
 }
-
 .pa{
     margin-bottom: 0px;
 }
+
+
+
+
+
+
+
 body{
   overflow-x: hidden;
   color: black;
@@ -1445,7 +1451,7 @@ body {
 .footer-items ul li{
   margin: 10px 0;
 }
-.uli li{
+.footer-items ul li a{
   cursor: pointer;
 }
 .footer-items ul li i{
