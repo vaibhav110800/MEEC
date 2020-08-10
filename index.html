@@ -26,13 +26,8 @@
 
 <body data-spy="scroll" data-target="#navbarResponsive">
 
-  <div class="preloader loading">
-    <span class="slice"></span>
-    <span class="slice"></span>
-    <span class="slice"></span>
-    <span class="slice"></span>
-    <span class="slice"></span>
-    <span class="slice"></span>
+  <div class="loader_bg">
+    <div class="loader"></div>
   </div>
 
   <!-- start home section  -->
@@ -783,7 +778,9 @@
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    setTimeout(function () {
+      $('.loader_bg').fadeToggle();
+    }, 5000);
   </script>
   <script type="text/javascript">
     $('.slider').slick({
