@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@800&family=Roboto:wght@500&display=swap');
+html {
+    overflow-x: initial !important;
+  }
+body{
+    overflow-x: hidden;
+    color: black;
+  }
+*{
+    box-sizing: border-box;
+  }
+  button:focus {outline:0;}
+
+  ::-webkit-scrollbar
+  {
+    border-radius: 20px;
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track{
+      box-shadow: linear-gradient(125deg,#3498db,#34495e);
+    border-radius: 30px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+      background: linear-gradient(125deg,#3498db,#34495e);
+    border-radius: 30px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+      background: linear-gradient(125deg,#0f4c75,#1b262c);
+  }
+
+  .navbar{
+      position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(6, 33, 46, .6) !important;
+  }
+  .navbar-inner {
+    background:transparent;
+}
+  a.nav-link{
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+  }
+  .navbar-brand img{
+    height: 2rem;
+  }
+  .navbar-nav li{
+    padding-right: .7rem;
+  }
+  .navbar-dark .navbar-nav .nav-link{
+    color: white;
+    padding-top: .8rem;
+  }
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link:hover{
+    border-bottom: 2px solid white;
+      font-size: 110%;
+  }
+  .custom-toggler.navbar-toggler { 
+    border-color: #1b262c; 
+  } 
+
+/* -------------- courses section -------------------- */
+
+.fc{
+    padding-top: 20px;
+    color: #1b262c;
+    font-size: 54px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.bc{
+    color: #1b262c;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.course-button{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    text-align: center; 
+    flex-wrap: wrap;
+}
+
+.course-button button{
+    width: 170px;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+    border:2px solid #0f4c75;
+    background: #0f4c75;
+    color: white;
+    border-radius: 16px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.course-button button:hover{
+    background: white;
+    color:  #0f4c75;
+}
+
+@media (max-width: 768px) {
+    .course-button button{
+        width: 120px;
+        height: 32px;
+        text-align: center;
+        margin: 5px;
+        font-size: 10px !important;
+    }
+}
+
+/* ------------ courses card ------------------ */
+
+.courses{
+    background: #0f4c75;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.conm{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.flip-box {
+  position: relative;
+  background-color: transparent;
+  width: 300px;
+  height: 330px;
+  /* box-shadow: 0 5px 15px rgba(0,00,.1); */
+  border-radius: 4px;
+  margin: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* cursor: pointer; */
+  /* perspective: 1000px; */
+}
+
+.flip-box-inner {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  /* cursor: pointer; */
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* cursor: pointer; */
+}
+
+.flip-box-front {
+  background-color: white;
+  color: #1b262c;
+  /* cursor: pointer; */
+}
+
+.flip-box-back {
+  background-color: white;
+  color: #1b262c;
+  transform: rotateY(180deg);
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width:300px;
+  height: auto;
+  transition: 1s;
+}
+.imc{
+  width:300px;
+  height: auto;
+}
+
+.conte h3{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #1b262c;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  margin-left: 5px;
+  padding: 0;
+}
+.conte h4{
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: #1b262c;
+  margin-left: 5px;
+  padding: 0;
+  margin-bottom: 4px;
+}
+.star{
+  margin-left: 5px;
+  font-family: 'Roboto', sans-serif;
+  color: #1b262c;
+  margin-left: 5px;
+}
+.star span{
+  color: #F39C12 ;
+}
+.des span{
+  margin-left: 5px;
+  font-family: 'Roboto', sans-serif;
+  color: #2f2519;
+  font-size: 12px;
+  background-color: #ede682;
+  padding:5px 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.bh{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #1b262c;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.pb1{
+  font-size: 15px;
+  line-height: 1.2;
+  font-family: 'Roboto', sans-serif;
+  color: #1b262c;
+  margin-left: 5px;
+}
+.pb{
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  color: #1b262c;
+  margin-left: 5px;
+}
+.pb span{
+  color: green;
+  font-weight: 700;
+  /* margin-top: 5px; */
+}
+.read1{
+  text-align: center;
+}
+.read{
+  border-radius: 15px;
+  background-color: #0f4c75 ;
+  border: 3px solid #0f4c75;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+.read:hover{
+  color:#0f4c75; 
+  /* border: 3px solid #0f4c75; */
+  background-color:transparent  ;
+  text-decoration:none; 
+  cursor:pointer;  
+}
+.it{
+  color: green;
+  font-weight: 900;
+}
+
+
+@media (max-width:767px){
+  .fc{
+    font-size: 30px;
+  }
+  .bc{
+    font-size: 15px;
+  }
+  .tc{
+    font-size: 20px;
+  }
+  .flip-box{
+    width: 280px;
+    height: 315px;
+    margin:10px !important;
+  }
+  .icon{
+    width:280px;
+    height: auto;
+    
+  }
+  .imc{
+    width:280px;
+    height: auto;
+  }
+  .conte h3{
+    margin-top: 7px;
+    margin-bottom: 3px;
+  }
+}
+
+#courses2{
+    display: none;
+}
+#courses3{
+    display: none;
+}
+#courses4{
+    display: none;
+}
+#courses5{
+    display: none;
+}
+#courses6{
+    display: none;
+}
+#courses7{
+    display: none;
+}
+#courses8{
+    display: none;
+}
