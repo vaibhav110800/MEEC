@@ -121,6 +121,8 @@ body{
 
 .courses{
     /* background: #0f4c75; */
+    width: 80%;
+    margin:auto;
   margin-bottom: 0px;
   display: flex;
   justify-content: center;
