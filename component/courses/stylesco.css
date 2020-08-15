@@ -286,7 +286,11 @@ body{
   color: green;
   font-weight: 900;
 }
-
+@media (max-width:1050px){
+    .courses{
+        width: 100%;
+    }
+}
 
 @media (max-width:767px){
   .fc{
