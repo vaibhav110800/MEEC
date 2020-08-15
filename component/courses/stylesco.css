@@ -92,7 +92,7 @@ body{
 
 .course-button button{
     width: 170px;
-    height: 30px;
+    height: 35px;
     text-align: center;
     margin: 10px;
     border:2px solid #0f4c75;
@@ -120,11 +120,13 @@ body{
 /* ------------ courses card ------------------ */
 
 .courses{
-    background: #0f4c75;
+    /* background: #0f4c75; */
   margin-bottom: 0px;
   display: flex;
   justify-content: center;
   align-items: center;  
+  justify-content: space-evenly;
+  min-height: 60vh;
 }
 .conm{
   display: flex;
@@ -141,6 +143,7 @@ body{
   margin: 20px;
   box-sizing: border-box;
   overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.19);
   /* cursor: pointer; */
   /* perspective: 1000px; */
 }
@@ -165,6 +168,8 @@ body{
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border: 0.3px solid #CACFD2 ;
+  
   /* cursor: pointer; */
 }
 
@@ -332,3 +337,88 @@ body{
 #courses8{
     display: none;
 }
+
+/* ------------------ footer ----------------------- */
+
+.constant_footer{
+    min-height: 20vh;
+    background: linear-gradient(60deg, #1b262c 0%, #0f4c75 100%);
+    margin-top: 50px;
+    width: 100%;
+    display: block;
+  }
+  
+  .constant_footer_inner{
+    width: 100%;
+    margin: auto;
+    padding: 30px 10px 20px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  
+  .footer-items{
+    /* width: 25%; */
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+  .fi{
+    height: 32px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .footer-items p{
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .social-media a {
+    font-size: 14px;
+    height: 30px !important;
+    width: 30px !important;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: .3s;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .social-media a path{
+    cursor: pointer;
+  }
+  .social-media a svg{
+    cursor: pointer;
+  }
+  i.fab{
+    cursor: pointer;
+  }
+  i.fab:hover{
+    cursor: pointer;
+  }
+  .social-media a:hover{
+    background-color: #FFFFFF;
+    cursor: pointer;
+    color: #0f4c75;
+  }
+  
+  .cr{
+    /* margin: 10px 0px 20px 0px; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-items {
+      width: 100%;
+  }
+  }
