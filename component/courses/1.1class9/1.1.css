@@ -64,6 +64,121 @@ body{
     border-color: #1b262c; 
   } 
 
+/* ------------------ courses ---------------------- */
+
+.crs-des{
+  width: 65%;
+  margin: auto;
+  min-height: 80vh;
+  display: flex;
+}
+
+.left{
+  width: 70%;
+  /* background: red; */
+}
+
+.right{
+  width: 30%;
+  /* background: yellow; */
+}
+
+.top{
+  font-family: 'Montserrat', sans-serif ;
+  color: #1b262c;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  margin-bottom: 20px;
+}
+
+.bottom{
+  font-family: 'Roboto', sans-serif ;
+  color: #1b262c;
+  padding-left: 30px;
+}
+.image{
+  text-align: center;
+  align-items: center;
+}
+.image img{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  max-width:90%;
+  max-height:90%;
+}
+.price{
+  text-align: center;
+  align-items: center;
+}
+
+.price p{
+  font-family: 'Roboto', sans-serif ;
+  color: #1b262c;
+  font-size: 25px;
+  
+}
+
+.price p s{
+  font-family: 'Roboto', sans-serif ;
+  color:  #8c98a4;
+  font-size: 22px;
+  padding-left: 10px;
+}
+
+.buc{
+  text-align: center;
+  align-items: center;
+}
+.button {
+  border-radius: 25px;
+  background-color: #0f4c75;
+  border: 3px solid #0f4c75;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 90%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 15px;
+  
+  font-weight: 700;
+}
+button:hover{
+  background: transparent;
+  border: 3px solid #0f4c75;
+  color: #0f4c75;
+  font-weight: 700;
+}
+
+.buc p{
+  font-size: 12px;
+  color: #8c98a4;
+}
+
+@media (max-width:767px){
+  .crs-des{
+    flex-direction:column;
+    width: 100%;
+  }
+  .left{
+    width: 100%;
+  }
+  .right{
+    width: 100%;
+  }
+}
+
+@media (min-width:768px) and (max-width:1300px){
+  .crs-des{
+    width: 90%;
+  }
+}
+
+
 /* ------------------ footer ----------------------- */
 
 .constant_footer{
