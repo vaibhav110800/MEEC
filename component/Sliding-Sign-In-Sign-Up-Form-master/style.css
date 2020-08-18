@@ -479,7 +479,7 @@ background-image: linear-gradient(315deg, #0f4c75 0%, #009ffd 74%);
   line-height: 22px;
 }
 
-.social-media a {
+.constant_footer_inner .social-media a {
   font-size: 14px;
   height: 30px !important;
   width: 30px !important;
@@ -506,7 +506,7 @@ i.fab{
 i.fab:hover{
   cursor: pointer;
 }
-.social-media a:hover{
+.constant_footer_inner .social-media a:hover{
   background-color: #FFFFFF;
   cursor: pointer;
   color: #0f4c75;

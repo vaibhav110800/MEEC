@@ -266,6 +266,7 @@ a.nav-link{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 30px;
 }
 .slider{
   display: flex;
@@ -306,6 +307,53 @@ a.nav-link{
   }
 }
 
+.faculty{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  
+  flex-wrap: wrap;
+}
+
+.fac{
+  padding-bottom: 30px;
+
+}
+.facimg{
+  padding-bottom: 10px;
+}
+.facimg img{
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.demo a button{
+  width: 140px;
+  height: 35px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid #0f4c75;
+  color: white;
+  background: #0f4c75;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.19);
+}
+.demo a button:hover{
+ 
+  color: #0f4c75;
+  background: white;
+}
+
+@media (max-width:1050px){
+  .faculty{
+    width: 100%;
+  }
+}
 /* --------------------------- courses section -------------------------- */
 .mc{
   background-color: #0f4c75;
