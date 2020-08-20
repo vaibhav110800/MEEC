@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteRule ^home?$ index.html
+RewriteRule ^signup-signin?$ index.html
+RewriteRule ^contact-us?$ SignInSignUp.html
+RewriteRule ^courses?$ courses.html
+RewriteRule ^blogs?$ blogs.html
